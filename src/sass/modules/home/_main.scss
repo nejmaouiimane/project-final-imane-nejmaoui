@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    // nav{
+    //     position: fixed;
+    // }
+    .carousel1 {
+        .img1 {
+            background-image: url(../../../../public/img/slider.jpg);
+            background-size: cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+
+            button {
+                height: 50px !important;
+            }
+        }
+
+        .img2 {
+            background-image: url(../../../../public/img/slider2.jpg);
+            background-size: cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+
+            button {
+                height: 50px !important;
+            }
+        }
+
+        .img3 {
+            background-image: url(../../../../public/img/slider3.jpg);
+            background-size: cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+
+            button {
+                height: 50px !important;
+            }
+        }
+    }
+
+    // part1 full scss
+    .first-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+
+        .text1 {
+            h1 {
+                width: 55%;
+            }
+            padding-inline: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5vh;
+        }
+        .first-row{
+            display: flex;
+            height: 40vh;
+            padding-inline: 10%;
+            justify-content: space-around;
+            .emergency{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                
+                .icon-border{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-bottom: dotted black 2px;
+
+                    i{
+                        color: $bleu;
+                        font-size: 50px;
+                        display: flex;
+                        border: solid 1px gray;
+                        border-radius: 50%;
+                        width: 100px;
+                        height: 100px;
+                        align-items: center;
+                        justify-content: center;
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+    
+
+    
+}

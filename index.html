@@ -1,14 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/app.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>test</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid w-75 justify-content-around ">
+            <a class="navbar-brand" href="#"> <img src="./public/img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0  d-flex gap-3">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-bleu2" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Doctor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blogs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+
+                </ul>
+                <button class="btn bg-bleu text-light" type="submit">Book Appointment</button>
+            </div>
+        </div>
+    </nav>
+    <!-- main -->
+
+    <!-- carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner flex-lg-row">
+            <div class="carousel-item active">
+                <div class="carousel1">
+                    <div class="img1">
+                        <div class="w-50 h-50 d-flex flex-lg-column align-items-lg-center justify-content-around">
+                            <h3 class="w-75 px-5">We Provide <span class="text-bleu">Medical</span> Services That You
+                                Can <span class="text-bleu">Trust!</span></h3>
+                            <p class="w-75 px-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
+                                repellendus
+                                voluptate temporibus nostrum aut alias.</p>
+                            <div class="w-75 px-5">
+                                <button class="w-50  rounded-2 border-0 text-light bg-bleu">Get Appointment</button>
+                                <button class="w-25 rounded-2 border-0 text-light bg-black">About us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel1">
+                    <div class="img2">
+                        <div class="w-50 h-50 d-flex flex-lg-column align-items-lg-center justify-content-around">
+                            <h3 class="w-75 px-5">We Provide <span class="text-bleu">Medical</span> Services That You
+                                Can <span class="text-bleu">Trust!</span></h3>
+                            <p class="w-75 px-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
+                                repellendus
+                                voluptate temporibus nostrum aut alias.</p>
+                            <div class="w-75 px-5">
+                                <button class="w-50  rounded-2 border-0 text-light bg-bleu">Get Appointment</button>
+                                <button class="w-25 rounded-2 border-0 text-light bg-black">About us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel1">
+                    <div class="img3">
+                        <div class="w-50 h-50 d-flex flex-lg-column align-items-lg-center justify-content-around">
+                            <h3 class="w-75 px-5">We Provide <span class="text-bleu">Medical</span> Services That You
+                                Can <span class="text-bleu">Trust!</span></h3>
+                            <p class="w-75 px-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
+                                repellendus
+                                voluptate temporibus nostrum aut alias.</p>
+                            <div class="w-75 px-5">
+                                <button class="w-50  rounded-2 border-0 text-light bg-bleu">Get Appointment</button>
+                                <button class="w-25 rounded-2 border-0 text-light bg-black">About us</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-bleu border border-0 rounded-5" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-bleu border border-0 rounded-5" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- part1 full scss -->
+    <div class="first-container">
+        <div class="text1">
+            <h1>We Are Ready To Help You & Your Family </h1>
+            <img src="./public/img/section-img.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ullam commodi harum! Veritatis, sed
+                aspernatur! Eos, nisi, earum quos possimus officia eligendi saepe maxime molestias voluptatem unde
+                quisquam asperiores repudiandae!</p>
+        </div>
+        
+        <div class="first-row">
+            <div class="emergency">
+                <div class=" icon-border ">
+                    <i class="fa-solid  fa-truck-medical fa-flip-horizontal"></i>
+                </div>
+                <h4>Emergency help</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex maxime praesentium. Incidunt,
+                    distinctio illum?</p>
+            </div>
+            <div class="emergency">
+                <div class="icon-border">
+                    <i class="fa-solid fa-staff-snake"></i>
+                </div>
+                <h4>Enriched Pharmecy</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex maxime praesentium. Incidunt,
+                    distinctio illum?</p>
+            </div>
+            <div class="emergency">
+                <div class="icon-border">
+                    <i class="fa-solid fa-stethoscope"></i>
+                </div>
+                <h4>Medical Treatment</h4> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ex maxime praesentium. Incidunt,
+                    distinctio illum?</p>
+            </div>
+        </div>
+    </div>
+
+
+    
 
 
 
@@ -18,4 +194,5 @@
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>

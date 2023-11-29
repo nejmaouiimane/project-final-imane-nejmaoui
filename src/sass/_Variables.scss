@@ -1,0 +1,13 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$bleu: #1a76d1;
+$bleu2: #4891da;
+
+$custom-colors: (
+"bleu": $bleu,
+"bleu2": $bleu2,
+);
+
+
+$theme-colors: map-merge($custom-colors , $theme-colors)
