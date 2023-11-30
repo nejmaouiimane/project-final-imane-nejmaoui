@@ -511,46 +511,73 @@
             </div>
         </div>
     </div>
-
     <section>
         <div class="div1 d-lg-flex align-content-lg-center flex-lg-column align-items-lg-center py-5 gap-3">
-            <h2 class="text-lg-center w-25 ">We Are Ready To Help You. <span>Book An Appointment</span></h2>
+            <h1 class="text-lg-center">We Offer Different Services To Improve Your Health</h1>
             <img src="./public/img/section-img.png" alt="">
-            <p class="text-lg-center w-50">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto soluta,
+            <p class="text-lg-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto soluta,
                 distinctio doloremque quis
                 obcaecati sapiente laborum pariatur voluptate!</p>
         </div>
-        <div class="contact-container bg-bleu d-lg-flex">
-            <div class="contact-baby d-lg-flex gap-4 flex-lg-row">
-                <div class="d-lg-flex gap-2 flex-lg-column">
-                    <input placeholder="Name" type="text">
-                    <input placeholder="Phone" type="text">
-                    <input placeholder="Doctor" type="text">
+
+        <div class="appointment pt-lg-4 justify-content-lg-center justify-content-lg-around d-lg-flex">
+            <div class="appointment-left d-lg-flex flex-column ">
+                <div class="top-appointment">
+                    <div class= "d-lg-flex flex-lg-row">
+                        <div class="right-top-appointment d-lg-flex  flex-lg-column ">
+                            <input class="rounded-1 border-1 border-black" placeholder="Name" type="text">
+                            <input  class="rounded-1 border-1 border-black" placeholder="Phone" type="text">
+                            <div >
+                                <select class="form-select rounded-1 border-1 border-black  " >
+                                    <option>Doctor</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="left-top-appointment d-lg-flex flex-column  p-lg-2">
+                            <input class="rounded-1 border-1 border-black " placeholder="Email" type="email">
+                            <div >
+                                <select class="form-select rounded-1 border-1 border-black" >
+                                    <option>Department</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <input class="rounded-1 border-1 border-black" placeholder="Date" type="text">
+                            
+                        </div>
+                    </div>
                 </div>
-                <div class="d-lg-flex gap-2 flex-lg-column">
-                    <input placeholder="Name" type="text">
-                    <input placeholder="Phone" type="text">
-                    <input placeholder="Doctor" type="text">
+                <div class="bottom-appointment">
+                    <textarea placeholder="Write Your Message Here ... " name="" id="" cols="65" rows="10"></textarea>
+                </div>
+                <div class="d-lg-flex flex-lg-row gap-4 d-flex flex-column">
+                    <button class="bg-bleu p-lg-2 rounded-2 border-0 text-white">Book An Appointment</button>
+                    <p class="text-black-50">(We will be confirm by an text Message)</p>
                 </div>
             </div>
+            <div class="appointment-right">
+                <img src="./public/img/contact-img.png" alt="">
+            </div>
 
-
-            <div class="contact-baby d-lg-flex flex-lg-column"><img src="./public/img/contact-img.png" alt=""></div>
         </div>
     </section>
-    <div class="contact-father">
-        <div class="d-lg-flex flex-lg-row">
-            <input placeholder="Name" type="text">
-                    <input placeholder="Phone" type="text">
-                    <input placeholder="Doctor" type="text">
+    <!-- sign up -->
+    <div class="d-lg-flex bg-bleu">
+        
+        <div  class="left-part-signup">
+            <h1>Sign up for newsletter</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, odit. Harum, debitis?</p>
         </div>
-        <div class="d-lg-flex flex-lg-row">
-            <input placeholder="Name" type="text">
-                    <input placeholder="Phone" type="text">
-                    <input placeholder="Doctor" type="text">
+        <div class="right-part-signup">
+            <input placeholder="Your email adress" type="text">
+            <button>Subscribe</button>
         </div>
-
     </div>
+    
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>

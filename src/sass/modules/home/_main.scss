@@ -267,6 +267,29 @@ body {
             height: 30vh;
         }
     }
+    .top-appointment{
+        height: 20vh !important;
+        width: 50vw !important;
+        display: flex;
+        justify-content: space-between;
+        .right-top-appointment{
+            gap: 2vh;
+            input{
+                width: 245px;
+                height: 50px;
+            }
+            
+            }
+        .left-top-appointment{
+                gap: 2vh;
+                input{
+                    width: 245px;
+                    height: 50px;
+                }
+            }
+        
+
+    }
 }
 @media (max-width:430px) {
     .carousel1{
