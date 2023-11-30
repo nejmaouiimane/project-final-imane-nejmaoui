@@ -12259,6 +12259,16 @@ body .section6 .div1 p {
 body .icon-card {
   font-size: larger !important;
 }
+body .parent-pic {
+  background-image: url(../../../../public/img/client-bg.jpg);
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: 120rem;
+  position: sticky;
+}
+body .parent-pic .children-pic {
+  height: 30vh;
+}
 
 @media (max-width: 430px) {
   .carousel1 {

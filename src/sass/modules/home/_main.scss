@@ -257,6 +257,16 @@ body {
     .icon-card{
         font-size: larger !important;
     }
+    .parent-pic{
+        background-image: url(../../../../public/img/client-bg.jpg);
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-size: 120rem;
+        position: sticky;
+        .children-pic{
+            height: 30vh;
+        }
+    }
 }
 @media (max-width:430px) {
     .carousel1{
@@ -362,4 +372,5 @@ body {
                 width: 50vw;
             }
         }
+
 }
