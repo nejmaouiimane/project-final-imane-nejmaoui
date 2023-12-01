@@ -12263,6 +12263,36 @@ body .blockquote .image2 .column1 i {
   align-items: center;
   justify-content: center;
 }
+body .sec3 .sec3-div1 {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: space-around;
+  align-items: center;
+}
+body .sec3 .sec3-div1 h2, body .sec3 .sec3-div1 .h2 {
+  width: 450px;
+  text-align: center;
+}
+body .sec3 .sec3-div1 p {
+  width: 450px;
+  text-align: center;
+}
+body .sec3 .icon1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  gap: 20px;
+}
+body .sec3 .icon1 div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+body .sec3 .icon1 div i {
+  font-size: 20px;
+  color: dodgerblue;
+}
 body .text2 {
   padding-inline: 20%;
   display: flex;
@@ -12375,28 +12405,33 @@ body .parent-pic {
 body .parent-pic .children-pic img {
   width: 25% !important;
 }
-body .top-appointment {
-  height: 20vh !important;
-  width: 50vw !important;
-  display: flex;
-  justify-content: space-between;
+body .boton-1 {
+  position: relative;
+  display: inline-block;
+  color: white;
+  background-image: linear-gradient(#363636, #363636);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s, color 0.5s;
 }
-body .top-appointment .right-top-appointment {
-  gap: 2vh;
-}
-body .top-appointment .right-top-appointment input {
-  width: 245px;
-  height: 50px;
-}
-body .top-appointment .left-top-appointment {
-  gap: 2vh;
-}
-body .top-appointment .left-top-appointment input {
-  width: 245px;
-  height: 50px;
+body .boton-1:hover {
+  background-size: 100% 100%;
+  color: #fff;
 }
 body .sign-up {
-  height: 30vh !important;
+  height: 40vh !important;
+  background-color: #edf2ff;
+}
+body .sign-up .right-part {
+  width: 800px !important;
+  background-color: red;
+}
+body .sign-up .right-part .inputs {
+  width: 120px !important;
+}
+body footer .last-div div input::placeholder {
+  color: white;
 }
 
 @media (max-width: 430px) {
@@ -12411,7 +12446,6 @@ body .sign-up {
     height: 70vh !important;
     background-position: top;
     background-size: 400px;
-    background-repeat: no-repeat;
     background-size: auto;
     gap: 100px !important;
   }
@@ -12457,6 +12491,25 @@ body .sign-up {
   .first-container .text1 p {
     width: 90vw !important;
   }
+  .sec3 .sec3-div1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sec3 .sec3-div1 .fifth-video {
+    width: 50vw !important;
+    height: 50vh;
+  }
+  .sec3 .sec3-div1 h2, .sec3 .sec3-div1 .h2 {
+    width: 350px;
+    text-align: center;
+  }
+  .sec3 .sec3-div1 p {
+    width: 350px;
+    text-align: center;
+  }
   .div1 {
     height: 70vh !important;
     display: flex;
@@ -12478,26 +12531,6 @@ body .sign-up {
     justify-content: space-around !important;
     display: flex;
     flex-direction: column;
-  }
-  .section3 .div1 h1, .section3 .div1 .h1,
-  .section3 .div1 p {
-    width: 100%;
-  }
-  .section3 .div2 .text-area .text-area2 {
-    display: flex;
-    flex-direction: column;
-    gap: 3vw;
-  }
-  .section3 .div2 .text-area .text-area2 .left-side div {
-    display: flex;
-    align-items: center;
-  }
-  .section3 .div2 .text-area .text-area2 .right-side div {
-    display: flex;
-    align-items: center;
-  }
-  .section3 .div2 .video video {
-    width: 100% !important;
   }
   .first-row {
     flex-direction: column;
@@ -12558,6 +12591,24 @@ body .sign-up {
   }
   .douneed button {
     width: 50vw;
+  }
+  .sec-twelve .text-scss h3, .sec-twelve .text-scss .h3 {
+    width: 80% !important;
+  }
+  .sec-twelve .text-scss p {
+    width: 80% !important;
+  }
+  .sec-twelve .log .log1 {
+    width: 96% !important;
+  }
+  .sec-twelve .log .log1 div {
+    width: 100% !important;
+  }
+  .sec-twelve .log .log2 {
+    width: 96% !important;
+  }
+  .sec-twelve .log .log2 div img {
+    width: 100% !important;
   }
 }
 
