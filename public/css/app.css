@@ -12278,13 +12278,21 @@ body .blockquote {
   background-color: #1a76d1;
 }
 body .blockquote .image2 {
+  width: 100%;
+  height: 100%;
   background-image: url(../../../../public/img/blockqoute-bg.jpg);
   background-size: cover;
+  background-attachment: fixed;
   opacity: 50%;
   height: 40vh;
   display: flex;
   align-items: center;
   padding: 10%;
+  position: relative;
+}
+body .blockquote .image2 ::before {
+  background-attachment: fixed;
+  position: absolute;
 }
 body .blockquote .image2 .column1 {
   color: white;
@@ -12292,6 +12300,7 @@ body .blockquote .image2 .column1 {
   flex-direction: row;
   width: 75vw;
   gap: 1vw;
+  z-index: inherit;
 }
 body .blockquote .image2 .column1 i {
   color: white;
@@ -12355,13 +12364,16 @@ body .icon-card {
 }
 body .parent-pic {
   background-image: url(../../../../public/img/client-bg.jpg);
-  height: 30vh;
+  width: 100%;
+  height: 40vh;
+  gap: 2vh;
   background-repeat: no-repeat;
-  background-size: 120rem;
-  position: sticky;
+  background-size: cover;
+  justify-content: space-around;
+  align-items: center;
 }
-body .parent-pic .children-pic {
-  height: 30vh;
+body .parent-pic .children-pic img {
+  width: 25% !important;
 }
 body .top-appointment {
   height: 20vh !important;
@@ -12384,7 +12396,7 @@ body .top-appointment .left-top-appointment input {
   height: 50px;
 }
 body .sign-up {
-  height: 20vh !important;
+  height: 30vh !important;
 }
 
 @media (max-width: 430px) {
@@ -12403,16 +12415,35 @@ body .sign-up {
     background-size: auto;
     gap: 100px !important;
   }
-  .carousel1 .carousel-text {
-    width: 100% !important;
+  .carousel1 .img2 {
+    width: 100vw !important;
+    height: 70vh !important;
+    background-position: top;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    gap: 100px !important;
+  }
+  .carousel1 .img3 {
+    width: 100vw !important;
+    height: 70vh !important;
+    background-position: top;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    gap: 100px !important;
+  }
+  .carousel1 .carou-text {
+    width: 90% !important;
+    height: 90vh;
     text-align: start;
     padding: 5px;
     font-size: small;
   }
   .carousel1 button {
-    width: 80vw !important;
+    width: 60vw !important;
     height: 1vw !important;
-    gap: 2vh !important;
+    text-align: center;
   }
   .first-container {
     width: 100vw !important;
@@ -12426,6 +12457,48 @@ body .sign-up {
   .first-container .text1 p {
     width: 90vw !important;
   }
+  .div1 {
+    height: 70vh !important;
+    display: flex;
+    align-items: center;
+  }
+  .div1 h1, .div1 .h1 {
+    width: 100% !important;
+    text-align: center;
+  }
+  .div1 p {
+    width: 90% !important;
+    text-align: center;
+  }
+  .div1 img {
+    width: 100px;
+  }
+  .cardss {
+    height: 220vh;
+    justify-content: space-around !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .section3 .div1 h1, .section3 .div1 .h1,
+  .section3 .div1 p {
+    width: 100%;
+  }
+  .section3 .div2 .text-area .text-area2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .section3 .div2 .text-area .text-area2 .left-side div {
+    display: flex;
+    align-items: center;
+  }
+  .section3 .div2 .text-area .text-area2 .right-side div {
+    display: flex;
+    align-items: center;
+  }
+  .section3 .div2 .video video {
+    width: 100% !important;
+  }
   .first-row {
     flex-direction: column;
     align-items: center;
@@ -12433,6 +12506,17 @@ body .sign-up {
   }
   .first-row p {
     width: 100vw;
+  }
+  .parent-pic {
+    height: 150vh !important;
+  }
+  .parent-pic .children-pic {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .parent-pic .children-pic img {
+    height: 12vh !important;
+    width: 12vw !important;
   }
   .blockquote .image2 {
     width: 100vw !important;
@@ -12464,7 +12548,7 @@ body .sign-up {
     text-align: center;
   }
   .douneed {
-    height: 60vh !important;
+    height: 90vh !important;
   }
   .douneed h1, .douneed .h1 {
     width: 100vw;

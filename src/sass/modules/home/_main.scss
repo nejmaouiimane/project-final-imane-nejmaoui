@@ -166,14 +166,21 @@ body {
     .blockquote{
         background-color: $bleu;
         .image2{
+            width: 100%;
+            height: 100%;
             background-image: url(../../../../public/img/blockqoute-bg.jpg);
             background-size: cover;
+            background-attachment: fixed;
             opacity: 50%;
-
             height: 40vh;
             display: flex;
             align-items: center;
             padding: 10%;
+            position: relative;
+            & ::before{
+                background-attachment: fixed;
+                position: absolute;
+            }
 
             .column1{
                 color: white;
@@ -181,6 +188,7 @@ body {
                 flex-direction: row;
                 width: 75vw;
                 gap: 1vw;
+                z-index:inherit ;
                 i{
                     color: white;
                     font-size: 35px;
@@ -259,13 +267,20 @@ body {
     }
     .parent-pic{
         background-image: url(../../../../public/img/client-bg.jpg);
-        height: 30vh;
+        width: 100%;
+        height: 40vh;
+        gap: 2vh;
         background-repeat: no-repeat;
-        background-size: 120rem;
-        position: sticky;
+        background-size: cover;
+        justify-content: space-around;
+        align-items: center;
         .children-pic{
-            height: 30vh;
+            img{
+                width:25% !important;
+            }
         }
+        
+        
     }
     .top-appointment{
         height: 20vh !important;
@@ -291,7 +306,7 @@ body {
 
     }
     .sign-up{
-        height: 20vh !important;
+        height: 30vh !important;
     }
 }
 @media (max-width:430px) {
@@ -310,20 +325,39 @@ body {
             background-size: auto;
             gap: 100px !important;
         }
-        .carousel-text{
-            width: 100% !important;
+        .img2{
+            width: 100vw !important;
+            height: 70vh !important;
+            background-position: top;  
+            background-size: 400px;
+            background-repeat: no-repeat;  
+            background-size: auto;
+            gap: 100px !important;
+        }
+        .img3{
+            width: 100vw !important;
+            height: 70vh !important;
+            background-position: top;  
+            background-size: 400px;
+            background-repeat: no-repeat;  
+            background-size: auto;
+            gap: 100px !important;
+        }
+        .carou-text{
+            width: 90% !important;
+            height: 90vh;
             text-align: start;
             padding: 5px;
             font-size: small;
 
         }
         button{
-            width: 80vw !important;
+            width: 60vw !important;
             height: 1vw !important;
-            gap: 2vh !important;
+            text-align: center;
         }
-
     }
+
     .first-container{
         width: 100vw !important;
         display: flex;
@@ -338,8 +372,70 @@ body {
                 width: 90vw !important;
             }
                 }
-
         
+    }
+    
+    .div1{
+        height: 70vh !important;
+        display: flex;
+        align-items: center;
+        h1{
+            width: 100% !important;
+            text-align: center;
+        }
+        p{
+            width: 90% !important;
+            text-align: center;
+        }
+
+        img{
+            width: 100px;
+        }
+    }
+    .cardss{
+        height: 220vh;
+        justify-content: space-around !important;
+        display: flex;
+        flex-direction: column;
+    }
+    .section3 {
+        .div1 {
+
+            h1,
+            p {
+                width: 100%;
+            }
+        }
+
+        .div2 {
+            .text-area {
+                .text-area2 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3vw;
+
+                    .left-side {
+                        div {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    .right-side {
+                        div {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+
+            .video {
+                video {
+                    width: 100% !important;
+                }
+            }
+        }
     }
     .first-row{
         flex-direction: column;
@@ -347,6 +443,18 @@ body {
         height: 120vh !important;
         p{
             width: 100vw;
+        }
+    }
+    .parent-pic{
+        height: 150vh !important;
+        .children-pic{
+            height: 100% !important;
+            width: 100% !important;
+            img{
+                height: 12vh !important;
+                width: 12vw !important;
+            }
+
         }
     }
     .blockquote{
@@ -359,8 +467,6 @@ body {
                 align-items: center;
                 display: flex;
             }
-            
-
             .column1{
                 flex-direction: column !important;
                 width: 100vw !important;
@@ -387,7 +493,7 @@ body {
                     
         }
         .douneed{
-            height: 60vh !important;
+            height: 90vh !important;
             h1{
                 width: 100vw;
             }
