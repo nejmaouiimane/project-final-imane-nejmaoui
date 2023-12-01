@@ -12143,6 +12143,17 @@ textarea.form-control-lg {
   padding: 0;
 }
 
+body .n-btn {
+  background-image: linear-gradient(#363636, #363636);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.5s, color 0.5s;
+}
+body .n-btn:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
 body .carousel1 .img1 {
   background-image: url(../../../../public/img/slider.jpg);
   background-size: cover;
@@ -12193,7 +12204,7 @@ body .first-container .text1 h1, body .first-container .text1 .h1 {
 body .first-container .text1::before {
   content: "";
   position: absolute;
-  top: 48vh;
+  top: 65vh;
   left: 60vw;
   width: 8vw;
   border-bottom: dotted dodgerblue 3px;
@@ -12207,7 +12218,7 @@ body .first-container .first-row {
 body .first-container .first-row::before {
   content: "";
   position: absolute;
-  top: 48vh;
+  top: 65vh;
   left: 30vw;
   width: 8vw;
   border-bottom: dotted dodgerblue 3px;

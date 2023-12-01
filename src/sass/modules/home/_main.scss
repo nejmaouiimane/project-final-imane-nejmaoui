@@ -9,6 +9,17 @@ body {
     // nav{
     //     position: fixed;
     // }
+    .n-btn{
+        background-image: linear-gradient(#363636, #363636);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        transition: background-size .5s, color .5s;
+    }
+    .n-btn:hover{
+        background-size: 100% 100%;
+        color: #fff;
+    }
     .carousel1 {
         .img1 {
             background-image: url(../../../../public/img/slider.jpg);
@@ -21,6 +32,7 @@ body {
                 height: 50px !important;
             }
         }
+        
 
         .img2 {
             background-image: url(../../../../public/img/slider2.jpg);
@@ -70,7 +82,7 @@ body {
             &::before {
                 content: "";
                 position: absolute;
-                top: 48vh;
+                top: 65vh;
                 left: 60vw;
                 width: 8vw;
                 border-bottom: dotted dodgerblue 3px;
@@ -86,7 +98,7 @@ body {
             &::before {
                 content: "";
                 position: absolute;
-                top: 48vh;
+                top: 65vh;
                 left: 30vw;
                 width: 8vw;
                 border-bottom: dotted dodgerblue 3px;
@@ -387,6 +399,7 @@ body {
             }
         }
     }
+    
 }
 
 @media (max-width:430px) {
